@@ -14,6 +14,14 @@
 		D906363929D1B8B800FAFE6B /* MVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D906363829D1B8B800FAFE6B /* MVVMTests.swift */; };
 		D906364329D1B8B800FAFE6B /* MVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D906364229D1B8B800FAFE6B /* MVVMUITests.swift */; };
 		D906364529D1B8B800FAFE6B /* MVVMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D906364429D1B8B800FAFE6B /* MVVMUITestsLaunchTests.swift */; };
+		D906365529D1BB9600FAFE6B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D906365429D1BB9600FAFE6B /* HomeView.swift */; };
+		D906365729D1BBA500FAFE6B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D906365629D1BBA500FAFE6B /* DetailView.swift */; };
+		D906365929D1BBC400FAFE6B /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = D906365829D1BBC400FAFE6B /* Weather.swift */; };
+		D906365B29D1BBD500FAFE6B /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D906365A29D1BBD500FAFE6B /* WeatherViewModel.swift */; };
+		D906365D29D2DCE400FAFE6B /* ParsingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D906365C29D2DCE400FAFE6B /* ParsingViewModel.swift */; };
+		D906365F29D2E30100FAFE6B /* Wikipedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = D906365E29D2E30100FAFE6B /* Wikipedia.swift */; };
+		D906366329D2EE1F00FAFE6B /* WikipediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D906366229D2EE1F00FAFE6B /* WikipediaView.swift */; };
+		D906366A29D4698100FAFE6B /* WikipediaDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D906366929D4698000FAFE6B /* WikipediaDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +52,14 @@
 		D906363E29D1B8B800FAFE6B /* MVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D906364229D1B8B800FAFE6B /* MVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMUITests.swift; sourceTree = "<group>"; };
 		D906364429D1B8B800FAFE6B /* MVVMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D906365429D1BB9600FAFE6B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D906365629D1BBA500FAFE6B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		D906365829D1BBC400FAFE6B /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		D906365A29D1BBD500FAFE6B /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		D906365C29D2DCE400FAFE6B /* ParsingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsingViewModel.swift; sourceTree = "<group>"; };
+		D906365E29D2E30100FAFE6B /* Wikipedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wikipedia.swift; sourceTree = "<group>"; };
+		D906366229D2EE1F00FAFE6B /* WikipediaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaView.swift; sourceTree = "<group>"; };
+		D906366929D4698000FAFE6B /* WikipediaDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +112,8 @@
 			children = (
 				D906362729D1B8B600FAFE6B /* MVVMApp.swift */,
 				D906362929D1B8B600FAFE6B /* ContentView.swift */,
+				D906366429D2F12D00FAFE6B /* Weather */,
+				D906366829D2F16C00FAFE6B /* Wikipedia */,
 				D906362B29D1B8B800FAFE6B /* Assets.xcassets */,
 				D906362D29D1B8B800FAFE6B /* Preview Content */,
 			);
@@ -125,6 +143,76 @@
 				D906364429D1B8B800FAFE6B /* MVVMUITestsLaunchTests.swift */,
 			);
 			path = MVVMUITests;
+			sourceTree = "<group>";
+		};
+		D906365129D1B8C500FAFE6B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D906365E29D2E30100FAFE6B /* Wikipedia.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D906365229D1B8CA00FAFE6B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D906366229D2EE1F00FAFE6B /* WikipediaView.swift */,
+				D906366929D4698000FAFE6B /* WikipediaDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D906365329D1B8D100FAFE6B /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				D906365C29D2DCE400FAFE6B /* ParsingViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		D906366429D2F12D00FAFE6B /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				D906366529D2F14100FAFE6B /* Model */,
+				D906366629D2F14D00FAFE6B /* View */,
+				D906366729D2F15900FAFE6B /* ViewModel */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		D906366529D2F14100FAFE6B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D906365829D1BBC400FAFE6B /* Weather.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D906366629D2F14D00FAFE6B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D906365429D1BB9600FAFE6B /* HomeView.swift */,
+				D906365629D1BBA500FAFE6B /* DetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D906366729D2F15900FAFE6B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D906365A29D1BBD500FAFE6B /* WeatherViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D906366829D2F16C00FAFE6B /* Wikipedia */ = {
+			isa = PBXGroup;
+			children = (
+				D906365129D1B8C500FAFE6B /* Model */,
+				D906365229D1B8CA00FAFE6B /* View */,
+				D906365329D1B8D100FAFE6B /* View Model */,
+			);
+			path = Wikipedia;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +346,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D906362A29D1B8B600FAFE6B /* ContentView.swift in Sources */,
+				D906365F29D2E30100FAFE6B /* Wikipedia.swift in Sources */,
+				D906366329D2EE1F00FAFE6B /* WikipediaView.swift in Sources */,
+				D906365D29D2DCE400FAFE6B /* ParsingViewModel.swift in Sources */,
+				D906365729D1BBA500FAFE6B /* DetailView.swift in Sources */,
+				D906365529D1BB9600FAFE6B /* HomeView.swift in Sources */,
+				D906365B29D1BBD500FAFE6B /* WeatherViewModel.swift in Sources */,
+				D906366A29D4698100FAFE6B /* WikipediaDetailView.swift in Sources */,
 				D906362829D1B8B600FAFE6B /* MVVMApp.swift in Sources */,
+				D906365929D1BBC400FAFE6B /* Weather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
